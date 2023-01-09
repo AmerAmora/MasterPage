@@ -107,7 +107,7 @@ td{
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
+   
       <div>
             <div class="containerAfter" style=" display: flex;
     flex-direction: column;
@@ -185,5 +185,5 @@ td{
       
 
         </div>
-        </form>
+
 </asp:Content>

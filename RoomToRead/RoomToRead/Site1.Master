@@ -23,7 +23,7 @@
     <form id="form1" runat="server">
         	<nav class="navbar navbar-expand-lg " style="background-color:#45B08E">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#"><img style="width:50px; height:50px" src="Images/Navlogo.png" /></a>
+  <a class="navbar-brand" href="Home.aspx"><img style="width:50px; height:50px" src="Images/Navlogo.png" /></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,19 +31,19 @@
   <div class=" collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ms-auto ">
       <li class="nav-item">
-        <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link mx-2 active" aria-current="page" href="Home.aspx">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link mx-2" href="#">Category</a>
       </li>
     
-          <li class="nav-item"><a class="nav-link mx-2" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link mx-2" href="AboutUs.aspx">About Us</a></li>
           <li class="nav-item"><a class="nav-link mx-2" href="#">Contact us</a></li>
             <li class="nav-item">
-        <a class="nav-link mx-2" id="LogIn" runat="server" href="#">Login</a>
+        <a class="nav-link mx-2" id="LogIn" runat="server" href="LoginPage.aspx">Login</a>
       </li>
         <li class="nav-item">
-            <a Visible="false" id="UserProfile" runat="server" class="nav-link mx-2" href="#">Profile</a>
+            <a Visible="false" id="UserProfile" runat="server" class="nav-link mx-2" href="UserProfile.aspx">Profile</a>
 
         </li>
          <li class="nav-item">
@@ -110,9 +110,7 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p class="text-white">
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+             Our site was designed and made to serve readers who love to read but do not have the books they need or for students who cannot get a book
             </p>
           </div>
           <!-- Grid column -->
@@ -129,13 +127,10 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">Your Account</a>
+              <a href="qq.aspx" class="text-white">Donate with us</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Donate with us</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">About us</a>
+              <a href="AboutUs.aspx" class="text-white">About us</a>
             </p>
             <p>
               <a href="#!" class="text-white">Contact Us</a>
@@ -169,7 +164,7 @@
          >
       © 2020 Copyright:
       <a class="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+         >@CopyRight RoomToRead</a
         >
     </div>
     <!-- Copyright -->

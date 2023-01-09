@@ -151,7 +151,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="AboutUs.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -178,6 +178,7 @@
     <Content Include="AdminCss\style.css" />
     <Content Include="AdminCss\userprofile.css" />
     <Content Include="AdminCss\ViewSales.css" />
+    <Content Include="Admin_Books.aspx" />
     <Content Include="Admin_request.aspx" />
     <Content Include="assets\favicon.ico" />
     <Content Include="assets\img\about\1.jpg" />
@@ -220,6 +221,7 @@
     <Content Include="assets\img\team\1.jpg" />
     <Content Include="assets\img\team\2.jpg" />
     <Content Include="assets\img\team\3.jpg" />
+    <Content Include="chartNew.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -297,6 +299,10 @@
     <Content Include="img\b.jfif" />
     <Content Include="img\back1.jpg" />
     <Content Include="img\bat.PNG" />
+    <Content Include="img\book.jpg" />
+    <Content Include="img\book0.jpg" />
+    <Content Include="img\book1.jpg" />
+    <Content Include="img\book2.jpg" />
     <Content Include="img\border.jpg" />
     <Content Include="img\Capture.PNG" />
     <Content Include="img\cat1.PNG" />
@@ -304,13 +310,14 @@
     <Content Include="img\logo12.PNG" />
     <Content Include="img\logo12345.PNG" />
     <Content Include="img\OIP.jfif" />
+    <Content Include="MagicAcceptedBook.aspx" />
+    <Content Include="Magic_Approve_order.aspx" />
     <Content Include="noFooter.Master" />
     <Content Include="img\3e8f4d17-d62c-45a3-a04f-044b78b2a668.tmp" />
     <Content Include="AdminDashBoard.Master" />
     <Content Include="AdminCss\.DS_Store" />
     <Content Include="AdminCss\maps\style.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="HomePage.aspx" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\bg_1.jpg" />
     <Content Include="Images\ezgif.com-gif-maker-removebg-preview.png" />
@@ -325,6 +332,7 @@
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="Order_Admin.aspx" />
     <Content Include="qq.aspx" />
     <Content Include="RegistrationPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -355,6 +363,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Singlebook.aspx" />
     <Content Include="Site.Master" />
     <Content Include="src\assets\favicon.ico" />
     <Content Include="src\assets\img\about\1.jpg" />
@@ -544,6 +553,13 @@
     <Content Include="vendors\ti-icons\fonts\themify.woff" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -663,6 +679,13 @@
     <Compile Include="AdminDashBoard.Master.designer.cs">
       <DependentUpon>AdminDashBoard.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Books.aspx.cs">
+      <DependentUpon>Admin_Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Books.aspx.designer.cs">
+      <DependentUpon>Admin_Books.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_request.aspx.cs">
       <DependentUpon>Admin_request.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -671,16 +694,16 @@
       <DependentUpon>Admin_request.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="chartNew.aspx.cs">
+      <DependentUpon>chartNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chartNew.aspx.designer.cs">
+      <DependentUpon>chartNew.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -705,19 +728,26 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MagicAcceptedBook.aspx.cs">
+      <DependentUpon>MagicAcceptedBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MagicAcceptedBook.aspx.designer.cs">
+      <DependentUpon>MagicAcceptedBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Magic_Approve_order.aspx.cs">
+      <DependentUpon>Magic_Approve_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Magic_Approve_order.aspx.designer.cs">
+      <DependentUpon>Magic_Approve_order.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="noFooter.Master.cs">
@@ -726,6 +756,13 @@
     </Compile>
     <Compile Include="noFooter.Master.designer.cs">
       <DependentUpon>noFooter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Admin.aspx.cs">
+      <DependentUpon>Order_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_Admin.aspx.designer.cs">
+      <DependentUpon>Order_Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="qq.aspx.cs">
@@ -741,6 +778,13 @@
     </Compile>
     <Compile Include="RegistrationPage.aspx.designer.cs">
       <DependentUpon>RegistrationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Singlebook.aspx.cs">
+      <DependentUpon>Singlebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Singlebook.aspx.designer.cs">
+      <DependentUpon>Singlebook.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

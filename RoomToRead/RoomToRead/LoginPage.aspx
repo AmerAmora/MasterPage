@@ -44,22 +44,19 @@
 					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<asp:TextBox  Cssclass="input100" ID="Password" runat="server"></asp:TextBox>
+						<asp:TextBox TextMode="Password"  Cssclass="input100" ID="Password" runat="server"></asp:TextBox>
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
 					</div>
 
 					<div class="flex-sb-m w-full p-t-3 p-b-32">
 						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="RememberMe" runat="server" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="RememberMe">
+							<input class="form-check-input" id="RememberMe" runat="server" type="checkbox" name="remember-me">
+							<label  for="RememberMe">
 								Remember me
 							</label>
 						
 						</div>
-						<div class="form-group">
-                        
-                    </div>
 						<div>
 							<asp:HyperLink class="txt1" runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register as a new user</asp:HyperLink>
 						</div>
@@ -81,7 +78,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		</div>
 	
 	
 

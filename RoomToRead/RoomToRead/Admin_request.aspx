@@ -69,7 +69,7 @@
            <div class="center"> 
             <div  id="batool">
                <br />
-               <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" DeleteCommand="DELETE FROM [category] WHERE [category_id] = @category_id" InsertCommand="INSERT INTO [category] ([category_id], [category_description], [category_name], [catergoy_image]) VALUES (@category_id, @category_description, @category_name, @catergoy_image)" SelectCommand="SELECT * FROM [category]" UpdateCommand="UPDATE [category] SET [category_description] = @category_description, [category_name] = @category_name, [catergoy_image] = @catergoy_image WHERE [category_id] = @category_id">
+               <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" DeleteCommand="DELETE FROM [category] WHERE [category_id] = @category_id" InsertCommand="INSERT INTO [category] ([category_description], [category_name], [catergoy_image]) VALUES (@category_description, @category_name, @catergoy_image)" SelectCommand="SELECT * FROM [category]" UpdateCommand="UPDATE [category] SET [category_description] = @category_description, [category_name] = @category_name, [catergoy_image] = @catergoy_image WHERE [category_id] = @category_id">
                    <DeleteParameters>
                        <asp:Parameter Name="category_id" Type="Int32" />
                    </DeleteParameters>

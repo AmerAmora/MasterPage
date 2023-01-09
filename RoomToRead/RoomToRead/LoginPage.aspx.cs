@@ -45,9 +45,17 @@ namespace RoomToRead
                         Con.Open();
                         SqlCommand getId = new SqlCommand($"Select id from aspnetusers where email='{Email.Text}'",Con);
                         string id=getId.ExecuteScalar().ToString();
-                        Con.Close();    
+                         
                         Session["userId"] = id;
+                        SqlCommand Dastination = new SqlCommand($"select roleid from AspNetUserRoles where userid='{id}'", Con);
+                       int role=Convert.ToInt32(Dastination.ExecuteScalar());
+                        if (role == 1) 
+                        { Response.Redirect("chartNew.aspx"); }
+                        else 
+                        { 
                         Response.Redirect("UserProfile.aspx");
+                        }
+                        Con.Close();
                         break;
                     case SignInStatus.LockedOut:
                         Response.Redirect("/Account/Lockout");

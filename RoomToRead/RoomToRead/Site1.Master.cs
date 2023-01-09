@@ -24,7 +24,7 @@ namespace RoomToRead
         protected void Logout(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("login.aspx");
+            Response.Redirect("LoginPage.aspx");
         }
 
     }

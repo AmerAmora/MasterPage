@@ -43,7 +43,7 @@ namespace RoomToRead
 
             SqlDataSource1.InsertParameters["category_name"].DefaultValue = TextBox4.Text;
             SqlDataSource1.InsertParameters["category_description"].DefaultValue = TextBox2.Text;
-            SqlDataSource1.InsertParameters["category_id"].DefaultValue = Convert.ToString(id);
+            //SqlDataSource1.InsertParameters["category_id"].DefaultValue = Convert.ToString(id);
 
             //////////////////////////////////////////////////////////////////////////////////////////////
 
